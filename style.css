@@ -1,0 +1,122 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 16px;
+    background-color: #1a1a2e;
+    background-image: radial-gradient(ellipse at top left, #2d1b4e 0%, #1a1a2e 50%, #111118 100%);
+    color: #e8e0f0;
+    font-family: 'Inter', sans-serif;
+}
+
+.all {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 28px;
+}
+
+h2 {
+    font-size: 2;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #c084fc;
+    text-shadow: 0 0 18px rgba(168, 85, 247, 0.45);
+    text-align: center;
+}
+
+h4 {
+    font-size: 0.85;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #a78bca;
+    text-align: center;
+}
+
+.titulo {
+    position: relative;
+    align-items: center;
+}
+
+.serchArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+#input-movie {
+    background-color: #2a2040;
+    border: 1px solid #6d28d9;
+    border-radius: 8px;
+    color: #e8e0f0;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95;
+    outline: none;
+    padding: 10px 16px;
+    width: 260px;
+}
+
+#input-movie::placeholder {
+    color: #7c6a9e;
+}
+
+button {
+ background: linear-gradient(135deg, #7c3aed, #a855f7);
+border: none;
+border-radius: 8px;
+ padding: 10px 18px;
+
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 320px;
+    padding: 20px 18px;
+    background-color: #221a36;
+    border: 1px solid #4c1d95;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(109, 40, 217, 0.15);
+}
+
+#poster-movie {
+    border-radius: 8px;
+    object-fit: cover;
+    align-self: center;
+}
+
+#title-movie {
+    font-size: 1.05;
+    font-weight: 700;
+    color: #d8b4fe;
+    letter-spacing: 0.5px;
+}
+
+#release-movie {
+    font-size: 0.8;
+    color: #9471c0;
+    letter-spacing: 0.5px;
+}
+
+#plot-movie {
+    font-size: 0.88;
+    color: #c4b5d9;
+    line-height: 1.6;
+}
